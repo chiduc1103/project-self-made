@@ -1,0 +1,259 @@
+body {
+  font-size: 1.6 rem;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --main-color: #1ebfc1;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+/* COMMON*/
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.btn {
+  display: inline-flex;
+  box-sizing: border-box;
+  min-width: 108px;
+  height: 48px;
+  background: #FFFFF;
+  border: 1px solid var(--main-color); /*cái để tạo ra khung màu xanh nước biển ở bên ngoài  */
+  border-radius: 6px;
+  /* margin: 52px 135px 50px 24px;  không cần dùng cái này vì xem theo form design nút này sẽ nằm sát lề của size main-content*/
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #1ebfc1;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+.content {
+  width: 1170px;
+  max-width: 100%;
+  margin-left: auto; /* để căn 2 bên bằng nhau ở bố cục trang web  */
+  margin-right: auto;
+}
+
+/* HEADER */
+.header-fixed {
+  margin-bottom: 50px;
+  display: block;
+  background: #FFFFF;
+  position: sticky;
+  top: -40px; /*để giữ lại 1 khoảng của khoảng cách trừ đi cái 26px này  */
+  z-index: 1;
+}
+.content .nav ul {
+  margin-left: 155px;
+}
+.content .nav ul a {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #2f3a3b;
+  margin-right: 40px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.nav ul {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+.content .nav .sign-up {
+  margin-left: 24px;
+}
+.content .nav {
+  font-weight: 400;
+  font-size: 1.6rem;
+  /* identical to box height */
+  text-align: center;
+  color: #494949;
+}
+/* HERO */
+.hero-wrap {
+  position: relative;
+  padding-bottom: 100px;
+}
+.hero-wrap .body {
+  display: flex;
+  margin-top: 50px;
+  position: relative;
+}
+.hero-wrap .sub-title {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #767e7e;
+  margin-bottom: 18px;
+}
+.hero-wrap .title {
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 1.16;
+  color: #0d1111;
+  margin-bottom: 46px;
+}
+.hero-wrap .desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.78;
+  color: #9da6a5;
+}
+.hero-wrap .cta-group {
+  display: flex;
+}
+.hero-wrap .started {
+  width: 186px;
+  height: 68px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.hero-wrap .hero-img {
+  width: 39%;
+  height: 110%;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+.hero-wrap .info {
+  width: 39%;
+}
+.hero-wrap .play-button {
+  margin-left: 74px;
+  margin-top: 77px;
+}
+.hero-wrap .started {
+  margin-top: 52px;
+}
+.hero-wrap .icon {
+  width: 157px;
+  height: 75px;
+  background: yellowgreen;
+  box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+}
+.hero-summary1 {
+  position: absolute;
+  bottom: 275px;
+  right: 352px;
+}
+.hero-summary2 {
+  position: absolute;
+  height: 106px;
+  width: 104px;
+  bottom: 33px;
+  right: 401px;
+  background: yellowgreen;
+  border-radius: 24px;
+}
+.schedule {
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #0d1111;
+}
+.hero-summary2 {
+  text-align: center;
+}
+.hero-summary2 li {
+  margin-bottom: 12px;
+}
+.hero-summary2 ul {
+  margin-top: 12px;
+}
+.hero-summary3 {
+  align-items: center;
+  position: absolute;
+  height: 80px;
+  width: 200px;
+  background: #1ebfc1;
+  right: 30px;
+  top: 38px;
+  border-radius: 24px;
+  text-align: center;
+}
+.hero-summary3 ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+.icon-3 {
+  justify-content: center;
+  align-items: center;
+}
+.hero-summary3 .students {
+  margin-top: 10px;
+}
+.hero-summary3 .student-img {
+  border-radius: 50%;
+}
+.quantity {
+  background: orangered;
+  height: 33px;
+  width: 33px;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+}
+/* FEATURED */
+.Featured .info .sub-title {
+  margin: 18px 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #767e7e;
+}
+.Featured .info .title {
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 1.33;
+  color: #0d1111;
+}
+.Featured .info .desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 27px;
+  color: #767e7e;
+}
+.Featured .list-featured {
+  margin-top: 80px;
+  display: flex;
+}
+.Featured .list-featured .title {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #0d1111;
+  margin: 26px 0;
+}
+.Featured .list-featured .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #9da6a5;
+  margin-right: 200px;
+}
+.Featured .list-featured .last {
+  margin-right: 120px;
+}
