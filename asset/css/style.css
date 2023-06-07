@@ -3,7 +3,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --main-color: #1ebfc1;
+  --cta-color: #def6f5;
+  --btn-color: #1ebfc1;
+  --letter-color: #fb9899;
 }
 html {
   font-size: 62.5%;
@@ -25,14 +27,14 @@ body {
   min-width: 108px;
   height: 48px;
   background: #FFFFF;
-  border: 1px solid var(--main-color); /*cái để tạo ra khung màu xanh nước biển ở bên ngoài  */
+  border: 1px solid var(--cta-color); /*cái để tạo ra khung màu xanh nước biển ở bên ngoài  */
   border-radius: 6px;
   /* margin: 52px 135px 50px 24px;  không cần dùng cái này vì xem theo form design nút này sẽ nằm sát lề của size main-content*/
   padding: 12px;
   font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
-  color: #1ebfc1;
+  color: var(--btn-color);
   align-items: center;
   justify-content: center;
 }
@@ -52,7 +54,7 @@ a {
   display: block;
   background: #FFFFF;
   position: sticky;
-  top: -40px; /*để giữ lại 1 khoảng của khoảng cách trừ đi cái 26px này  */
+  top: -20px; /*để giữ lại 1 khoảng của khoảng cách trừ đi cái 26px này  */
   z-index: 1;
 }
 .content .nav ul {
@@ -78,6 +80,7 @@ a {
 }
 .content .nav .sign-up {
   margin-left: 24px;
+  background: lightgray;
 }
 .content .nav {
   font-weight: 400;
@@ -99,7 +102,7 @@ a {
 .hero-wrap .sub-title {
   font-weight: 400;
   font-size: 1.4rem;
-  color: #767e7e;
+  color: var(--letter-color);
   margin-bottom: 18px;
 }
 .hero-wrap .title {
@@ -121,7 +124,7 @@ a {
 .hero-wrap .started {
   width: 186px;
   height: 68px;
-  background: #1ebfc1;
+  background: var(--btn-color);
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
   border-radius: 14px;
   color: white;
@@ -188,7 +191,7 @@ a {
   position: absolute;
   height: 80px;
   width: 200px;
-  background: #1ebfc1;
+  background: yellowgreen;
   right: 30px;
   top: 38px;
   border-radius: 24px;
@@ -210,7 +213,7 @@ a {
 .hero-summary3 .student-img {
   border-radius: 50%;
 }
-.quantity {
+.hero-wrap .quantity {
   background: orangered;
   height: 33px;
   width: 33px;
@@ -223,7 +226,7 @@ a {
   margin: 18px 0;
   font-weight: 700;
   font-size: 1.2rem;
-  color: #767e7e;
+  color: var(--letter-color);
 }
 .Featured .info .title {
   font-weight: 700;
@@ -235,7 +238,7 @@ a {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 27px;
-  color: #767e7e;
+  color: var(--letter-color);
 }
 .Featured .list-featured {
   margin-top: 80px;
@@ -256,4 +259,148 @@ a {
 }
 .Featured .list-featured .last {
   margin-right: 120px;
+}
+/* POPULAR */
+.popular {
+  margin-top: 130px;
+}
+.popular .intro {
+  margin-left: 15px;
+}
+.popular .media {
+  display: flex;
+  gap: 47px;
+}
+.popular .sub-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--letter-color);
+}
+.popular .title {
+  font-weight: 700;
+  font-size: 4.2rem;
+  color: #0d1111;
+  margin: 18px 0;
+}
+.popular .desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.78;
+  color: var(--letter-color);
+}
+.popular .info {
+  margin-bottom: 79px;
+}
+.popular .thumb-nail {
+  width: 100%;
+  height: 304px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.popular .detail {
+  position: relative;
+  left: 17px;
+  bottom: 53px;
+  background: var(--cta-color);
+  border-radius: 8px;
+  height: 152px;
+  width: 325px;
+}
+.popular .name-course {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #0d1111;
+}
+.popular .item {
+  position: relative;
+}
+.popular .dot {
+  width: 6px;
+  height: 6px;
+  background: var(--btn-color);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.popular .name-course {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #0d1111;
+}
+.popular .price {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: var(--letter-color);
+}
+.popular .footer {
+  margin-left: 8px;
+  display: flex;
+  font-size: 1.4rem;
+  color: var(--letter-color);
+  text-align: center;
+  align-items: center;
+}
+.popular .footer .cover-detail {
+  margin-top: 15px;
+}
+/* INTRO */
+
+.intro .content {
+  display: flex;
+  width: 862px;
+  height: 131px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro .quantity {
+  margin-right: 220px;
+  font-weight: 700;
+  font-size: 62px;
+  text-align: center;
+  color: #0d1111;
+  align-items: center;
+  background: var(--btn-color);
+}
+.intro .content .item:last-child .quantity {
+  margin-right: 0;
+}
+.intro .content .item .name {
+  margin-top: 11px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--letter-color);
+}
+.intro .content .item .mid {
+  margin-left: 19px;
+}
+/* REVIEW */
+.Review .content {
+  display: flex;
+  margin-top: 264px;
+}
+.Review .content .info {
+  width: 419px;
+  height: 192px;
+}
+.Review .content .info .comment {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  color: #5d6564;
+}
+.Review .content .info .signal {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #070707;
+}
+.Review .content .picture {
+  position: relative;
+}
+.Review .content .picture .face-6 {
+  position: relative;
+  bottom: 0;
+  right: 224px;
+}
+.Review .content .picture .face-1 {
+  margin-bottom: 144px;
 }
