@@ -377,16 +377,23 @@ a {
 .Review .content {
   display: flex;
   margin-top: 264px;
+  height: 481px;
+  position: relative;
 }
 .Review .content .info {
   width: 419px;
   height: 192px;
+}
+.Review .content .block-quote {
+  margin-top: 37px;
+  margin-bottom: 27px;
 }
 .Review .content .info .comment {
   font-weight: 400;
   font-size: 3.2rem;
   line-height: 1.5;
   color: #5d6564;
+  margin-bottom: 33px;
 }
 .Review .content .info .signal {
   font-weight: 500;
@@ -394,13 +401,120 @@ a {
   color: #070707;
 }
 .Review .content .picture {
-  position: relative;
+  width: 680px;
+}
+
+.Review .content .picture .face-1 {
+  position: absolute;
+  top: 0;
+  right: 433px;
+}
+.Review .content .picture .face-2 {
+  position: absolute;
+  right: 0;
+  top: 19px;
+}
+.Review .content .picture .face-3 {
+  position: absolute;
+  bottom: 39px;
+  right: 32px;
+}
+.Review .content .picture .face-4 {
+  position: absolute;
+  bottom: 0;
+  right: 389px;
+}
+.Review .content .picture .face-5 {
+  position: absolute;
+  top: 258px;
+  right: 601px;
 }
 .Review .content .picture .face-6 {
-  position: relative;
-  bottom: 0;
-  right: 224px;
+  position: absolute;
+  right: 171px;
+  top: 107px;
 }
-.Review .content .picture .face-1 {
-  margin-bottom: 144px;
+/* CTA */
+.cta {
+  padding: 130px 0;
+}
+.cta .body {
+  background: #def6f5;
+  width: 100%;
+  height: 272px;
+  display: flex;
+  position: relative;
+}
+
+.cta .title {
+  font-weight: 700;
+  font-size: 4.2rem;
+  color: #070707;
+  padding-top: 76px;
+  padding-left: 135px;
+  margin-bottom: 18px;
+}
+.cta .desc {
+  font-weight: 400;
+  font-size: 18px;
+  color: #767e7e;
+  padding-left: 135px;
+}
+.cta .button {
+  position: absolute;
+  right: 289px;
+  top: 96px;
+  display: inline-flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--btn-color);
+  width: 186px;
+  height: 68px;
+  border-radius: 14px;
+  padding: 0;
+}
+/* Footer */
+.footer .content {
+  gap: 185px;
+}
+.footer .content .social {
+  display: flex;
+}
+.footer .highlight {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #2e2e2e;
+  margin-bottom: 25px;
+}
+.footer .manage-footer {
+  margin-left: 144px;
+  display: flex;
+  gap: 155px;
+  position: relative;
+}
+.footer .manage-footer:first-child {
+  margin-left: 0;
+}
+.footer .logo {
+  position: absolute;
+  top: 0;
+}
+.footer .item {
+  font-weight: 400;
+  font-size: 16px;
+  color: #535353;
+  margin-bottom: 20px;
+}
+.footer .list .icon {
+  margin-right: 13px;
+}
+.footer .copyright p {
+  margin-top: 80px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #b0b5b4;
+  text-align: center;
 }
